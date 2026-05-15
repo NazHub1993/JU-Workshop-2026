@@ -243,8 +243,22 @@ function updateScoreDisplay() {
 
 function restartGame() { 
   
-   startRunAnimation()
-   startScore()
+   isJumping = false;
+       gravity = 0.9;
+       position = 0;
+       runFrame = 1;
+       runSpeed = 5;
+       runIntervalId = null;
+       verticalVelocity = 0;
+       groundOffset = 0;
+       gameOver = false;
+       score = 500;
+       scoreIntervalId = null;
+       treePosition = 600;
+       treeIntervalId = null;
+
+       startRunAnimation()
+       startScore()
 
   // Remove gameOverText
   const gameOverText = document.getElementById("gameOverMessage");

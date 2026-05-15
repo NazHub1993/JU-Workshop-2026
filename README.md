@@ -69,3 +69,19 @@ The examinee needs to solve these challenges:
 <p align="center">
     <img src="readmeImages/chellange_5_demo.gif" alt="chellange_5_demo" />
 </p>
+
+6. **Life Bar:**
+<ol type="a" style="margin-left:20px">
+  <li>Dino starts with 3 lives. You need to display the life bar at the top centre of the screen. (Use the `blank_life.png` and `full_life.png` images to demonstrate the lives)</li>
+  <p align="center">
+    <img src="readmeImages/chellange_6a_demo.gif" alt="chellange_6a_demo" />
+  </p>
+  <li>A life item appears every 500 points. Collecting a life increases the life count by 1, up to a maximum of 5. (Use the `full_life.png` images to demonstrate the life item)</li>
+  <p align="center">
+    <img src="readmeImages/chellange_6b_demo.gif" alt="chellange_6b_demo" />
+  </p>
+  <li>Colliding with an obstacle reduces the life count by 1 instead of causing instant death. If the life count becomes 0, the game ends. Restart button should appear when the game ends.</li>
+  <p align="center">
+    <img src="readmeImages/chellange_6c_demo.gif" alt="chellange_6c_demo" />
+  </p>
+</ol>

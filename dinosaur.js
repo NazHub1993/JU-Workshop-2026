@@ -12,7 +12,7 @@ let runIntervalId = null;
 let verticalVelocity = 0;
 let groundOffset = 0;
 let gameOver = false;
-let score = 0;
+let score = 200;
 let scoreIntervalId = null;
 let treePosition = 600;
 let treeIntervalId = null;
@@ -68,6 +68,12 @@ function moveTree() {
         tree.style.height = randomHeight + "px";
         tree.style.width = 48 * (randomHeight / 100) + "px";
       }
+
+      if(score>200)
+      {
+        treePosition -= Math.floor(Math.random(600,1000)+600)        
+      }
+
       else {
         tree.style.height = "50px";
         tree.style.width = "24px";

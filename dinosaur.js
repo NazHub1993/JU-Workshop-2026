@@ -71,7 +71,7 @@ function moveTree() {
 
       if(score>200)
       {
-        treePosition -= Math.floor(Math.random(600,1000)+600)        
+        treePosition += Math.floor(Math.random(600,10000)+600)        
       }
 
       else {
@@ -241,7 +241,11 @@ function updateScoreDisplay() {
   scoreElement.textContent = "Score: " + score;
 }
 
-function restartGame() {
+function restartGame() { 
+  
+   startRunAnimation()
+   startScore()
+
   // Remove gameOverText
   const gameOverText = document.getElementById("gameOverMessage");
   if (gameOverText) {

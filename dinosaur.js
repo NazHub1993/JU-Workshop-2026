@@ -204,6 +204,10 @@ function startScore() {
     if (gameOver) return;
 
     score += 1;
+    if(score%100==0)
+    {
+      runSpeed+=1;
+    }
     updateScoreDisplay();
   }, 100); // 0.1 seconds = 100ms
 }

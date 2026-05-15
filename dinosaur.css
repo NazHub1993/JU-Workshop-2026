@@ -27,6 +27,16 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .heart-cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   #dino {
     position: absolute;
@@ -53,16 +63,18 @@ body {
   }
 
   #hidden-heart{
-    position: absolute;
+    position: ststic;
+
     bottom: 0;
     left: 600px;
     width: 24px;
     height: 50px;
+
     background-image: url("images/full_life.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
-    display: none;
+    
   }
   
   /* Run frame classes (toggled via JS) */

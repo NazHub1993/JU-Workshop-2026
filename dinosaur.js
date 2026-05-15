@@ -12,10 +12,11 @@ let runIntervalId = null;
 let verticalVelocity = 0;
 let groundOffset = 0;
 let gameOver = false;
-let score = 500;
+let score = 495;
 let scoreIntervalId = null;
 let treePosition = 600;
 let treeIntervalId = null;
+let lifeCount=5
 
 restartBtn.style.display = "none";
 
@@ -209,7 +210,7 @@ function startScore() {
     score += 1;
     if(score%500==0)
     {
-      hidden-heart.show()
+      hidden-heart.display()
     }
     updateScoreDisplay();
   }, 100); // 0.1 seconds = 100ms

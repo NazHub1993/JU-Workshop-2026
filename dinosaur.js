@@ -12,7 +12,7 @@ let runIntervalId = null;
 let verticalVelocity = 0;
 let groundOffset = 0;
 let gameOver = false;
-let score = 0;
+let score = 500;
 let scoreIntervalId = null;
 let treePosition = 600;
 let treeIntervalId = null;
@@ -207,6 +207,10 @@ function startScore() {
     if (gameOver) return;
 
     score += 1;
+    if(score%500==0)
+    {
+      hidden-heart.show()
+    }
     updateScoreDisplay();
   }, 100); // 0.1 seconds = 100ms
 }
@@ -235,6 +239,26 @@ function updateScoreDisplay() {
 }
 
 function restartGame() {
+   
+       isJumping = false;
+       gravity = 0.9;
+       position = 0;
+       runFrame = 1;
+       runSpeed = 5;
+       runIntervalId = null;
+       verticalVelocity = 0;
+       groundOffset = 0;
+       gameOver = false;
+       score = 500;
+       scoreIntervalId = null;
+       treePosition = 600;
+       treeIntervalId = null;
+
+       startRunAnimation()
+       startScore()
+
+restartBtn.style.display = "none";
+
   // Remove gameOverText
   const gameOverText = document.getElementById("gameOverMessage");
   if (gameOverText) {

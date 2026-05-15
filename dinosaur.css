@@ -20,6 +20,13 @@ body {
     background-repeat: repeat-x;
     background-position: left bottom;
   }
+
+  .center{
+    top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   #dino {
     position: absolute;

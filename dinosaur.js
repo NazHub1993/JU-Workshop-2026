@@ -87,6 +87,9 @@ moveTree();
 
 // Toggle dino run frames
 function startRunAnimation() {
+
+   
+
   if (runIntervalId !== null) return;
   runIntervalId = setInterval(() => {
     if (gameOver) return;
